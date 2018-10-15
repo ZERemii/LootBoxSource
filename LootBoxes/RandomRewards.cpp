@@ -78,7 +78,7 @@ namespace RandomRewards {
 			int level = selectedItem["Level"];
 			std::string BlueprintPath = selectedItem["BlueprintPath"];
 			FString FBlueprintPath(BlueprintPath.c_str());
-			 ArkApi::GetApiUtils().SpawnDino(sender, FBlueprintPath, nullptr, level, true, false);
+			 ArkApi::GetApiUtils().GMSummon(sender, FBlueprintPath, nullptr, level, true, false);
 		}
 
 		// Resources
